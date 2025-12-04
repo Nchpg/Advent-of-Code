@@ -44,7 +44,7 @@ def grid(l, t=str):
 
 def npgrid(l, t=str):
     g = np.array(grid(l, t))
-    return g, g.shape
+    return g
 
 def cnpgrid(g, i, j):
     return 0 <= i < g.shape[0] and 0 <= j < g.shape[1]
