@@ -143,6 +143,8 @@ def tester(ref_result=None):
                 if filename == "ref":
                     ref = ref_result
                 res = func(lines)
+                if res is None:
+                    res = "NaN"
                 time.sleep(0.1)
                 print(end=" ", flush=True)
                 _type = None
